@@ -371,22 +371,27 @@
 
                 <div class="col-12 col-md-6 mb-4">
                     <div class="p-4 border rounded-3 h-100">
-                        <h4 class="fw-semibold">Akad Nikah</h4>
-                        <p class="mt-3">
-                            <strong>Selasa, 10 Juni 2025</strong><br>
+                        <h4 class="fw-semibold mb-3">Akad Nikah</h4>
+                        <p class="mb-0">
+                            <strong>Minggu, 21 Desember 2025</strong><br>
                             Pukul 09.00 WIB<br>
-                            Bertempat di Gedung xxxx
+                            Bertempat di Dusun Cisambeng RT 04 RW 07<br>
+                            Desa Cijeler, Kecamatan Situraja,<br>
+                            Kabupaten Sumedang
                         </p>
                     </div>
                 </div>
 
+
                 <div class="col-12 col-md-6 mb-4">
                     <div class="p-4 border rounded-3 h-100">
-                        <h4 class="fw-semibold">Resepsi</h4>
-                        <p class="mt-3">
-                            <strong>Selasa, 10 Juni 2025</strong><br>
-                            Pukul 11.00 – 14.00 WIB<br>
-                            Bertempat di Gedung xxxx
+                        <h4 class="fw-semibold mb-3">Resepsi</h4>
+                        <p class="mb-0">
+                            <strong>Minggu, 21 Desember 2025</strong><br>
+                            Pukul 11.00 WIB<br>
+                            Bertempat di Dusun Cisambeng RT 04 RW 07<br>
+                            Desa Cijeler, Kecamatan Situraja,<br>
+                            Kabupaten Sumedang
                         </p>
                     </div>
                 </div>
@@ -399,37 +404,34 @@
     <!-- SECTION: LOKASI -->
     <!-- =============== -->
     <section class="py-5" id="lokasi">
-        <div class="container text-center">
-            <h2 class="fw-bold mb-4">Lokasi Acara</h2>
+        <h2 class="fw-bold text-center mb-4">Lokasi Acara</h2>
 
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
-                    <iframe
-                        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.2538406947956!2d107.99849407499592!3d-6.860150993138373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sid!2sid!4v1764451609197!5m2!1sid!2sid"
-                        class="w-100"
-                        height="450"
-                        style="border:0;"
-                        allowfullscreen=""
-                        loading="lazy"
-                        referrerpolicy="no-referrer-when-downgrade">
-                    </iframe>
+        <!-- Map full-width -->
+        <div class="w-100">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3961.2538406947956!2d107.99849407499592!3d-6.860150993138373!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2s!5e0!3m2!1sid!2sid!4v1764451609197!5m2!1sid!2sid"
+                width="100%"
+                height="450"
+                style="border:0;"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
 
-
-
-                    <a href="https://maps.app.goo.gl/wm4vrb5EJJCAY4kg7" target="_blank"
-                        class="btn btn-light px-4 mt-3">
-                        Buka di Google Maps
-                    </a>
-
-                </div>
-            </div>
+        <div class="text-center mt-3">
+            <a href="https://maps.app.goo.gl/wm4vrb5EJJCAY4kg7" target="_blank"
+                class="btn btn-light px-4">
+                Buka di Google Maps
+            </a>
         </div>
     </section>
+
 
     <!-- =============== -->
     <!-- SECTION: GALERI -->
     <!-- =============== -->
-    <section class="py-5 bg-light">
+    <section class="py-5 bg-light" id="galeri">
         <div class="container text-center">
             <h2 class="fw-bold mb-4">Galeri</h2>
 
@@ -459,19 +461,59 @@
     <!-- =============== -->
     <!-- SECTION: RSVP -->
     <!-- =============== -->
-    <section class="py-5 text-center">
-        <div class="container">
-            <h2 class="fw-bold mb-3">Konfirmasi Kehadiran</h2>
+    <section class="py-5 text-center" id="rsvp"
+        style="background-image: url('assets/images/images4.jpg'); background-size: cover; background-position: center; position: relative;">
 
-            <p>Silakan isi form berikut untuk konfirmasi kehadiran.</p>
+        <!-- Overlay gelap -->
+        <div class="position-absolute top-0 start-0 w-100 h-100"
+            style="background: rgba(0,0,0,0.5); z-index: 1;"></div>
 
-            <a href="https://forms.gle/xxxx" target="_blank" class="btn btn-success px-4">Isi RSVP</a>
+        <div class="container position-relative text-white" style="z-index: 2; max-width: 600px;">
+            <h2 class="fw-bold mb-4" style="text-shadow: 2px 2px 6px rgba(0,0,0,0.7);">
+                Konfirmasi Kehadiran
+            </h2>
 
-            <p class="mt-4">Atau konfirmasi via WhatsApp:</p>
+            <p class="mb-4" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.6);">
+                Silakan isi form berikut untuk konfirmasi kehadiran:
+            </p>
 
-            <a href="https://wa.me/628xxxx" target="_blank" class="btn btn-outline-success px-4">Hubungi Kami</a>
+            <form action="https://example.com/submit-rsvp" method="POST" class="p-4 rounded-4 shadow"
+                style="background: rgba(255,255,255,0.1); backdrop-filter: blur(10px);">
+
+                <div class="mb-3 text-start">
+                    <label for="name" class="form-label fw-semibold">Nama:</label>
+                    <input type="text" class="form-control bg-light bg-opacity-50 border-0 text-dark"
+                        id="name" name="name" placeholder="Nama lengkap" required>
+                </div>
+
+                <div class="mb-3 text-start">
+                    <label for="attendance" class="form-label fw-semibold">Kehadiran:</label>
+                    <select class="form-select bg-light bg-opacity-50 border-0 text-dark"
+                        id="attendance" name="attendance" required>
+                        <option value="" disabled selected>Pilih salah satu</option>
+                        <option value="Hadir">Hadir</option>
+                        <option value="Tidak Hadir">Tidak Hadir</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 text-start">
+                    <label for="message" class="form-label fw-semibold">Pesan / Doa:</label>
+                    <textarea class="form-control bg-light bg-opacity-50 border-0 text-dark"
+                        id="message" name="message" rows="3" placeholder="Pesan atau doa untuk pengantin"></textarea>
+                </div>
+
+                <button type="submit" class="btn btn-light text-dark fw-bold px-4 mt-2 w-100"
+                    style="transition: 0.3s;">Kirim Konfirmasi</button>
+            </form>
+
+            <p class="mt-4" style="text-shadow: 1px 1px 4px rgba(0,0,0,0.6);">Atau konfirmasi via WhatsApp:</p>
+            <a href="https://wa.me/6281322458451" target="_blank" class="btn btn-outline-light px-4 w-100">
+                Hubungi Kami
+            </a>
         </div>
     </section>
+
+
 
     <!-- FOOTER -->
     <footer class="py-3 bg-dark text-white text-center">
