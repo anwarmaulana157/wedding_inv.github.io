@@ -200,7 +200,37 @@
       <img src="assets/images/ornament-gold-bottom.png"
         alt=""
         style="width:90px; opacity:0.7; margin-top:25px;">
+      <div id="guestBox" style="text-align:center; margin-top:25px; animation:fadeIn 1.5s ease;">
+
+
+
+        <p style="
+      font-size:15px;
+      letter-spacing:1px;
+      opacity:0.85;
+      font-family:'Poppins', sans-serif;
+      margin-bottom:5px;">
+          Kepada Yth. Bapak/Ibu/Saudara/i
+        </p>
+
+        <!-- Nama Tamu -->
+        <span id="guestName" style="
+    padding:6px 18px;
+    border:2px solid #FFFFFFFF; 
+   
+    font-weight:600;
+    display:inline-block;
+"></span>
+
+
+      </div>
+
+
+
     </div>
+
+
+
   </div>
 
 
@@ -619,6 +649,23 @@
       document.getElementById("cd-seconds").innerHTML = seconds;
     }, 1000);
   </script>
+  <script>
+    // Fungsi ambil parameter dari URL
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    // Ambil nama tamu ?to=Nama Tamu
+    const guest = getQueryParam("to");
+
+    // Jika ada, tampilkan di halaman pembuka
+    if (guest) {
+      document.getElementById("guestName").innerHTML =
+        `<span style="font-size:16px; font-weight:bold">${guest}</span>`;
+    }
+  </script>
+
 
 
 </body>
